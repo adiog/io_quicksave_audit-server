@@ -52,7 +52,7 @@ setup(
 
     keywords='quicksave audit server',
 
-    packages=find_packages('server'),
+    packages=find_packages('src'),
 
     install_requires=['django'],
 
@@ -61,10 +61,6 @@ setup(
     },
 
     include_package_data=True,
-
-    package_data={
-        '': 'src'
-    },
 
     entry_points={
         'console_scripts': [
