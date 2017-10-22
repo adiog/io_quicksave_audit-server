@@ -6,6 +6,9 @@ import sys
 def main():
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "quicksave_audit_server.server.settings")
     try:
+        from django.core.management.commands.runserver import Command as runserver
+        runserver.default_port = "13666"
+
         from django.core.management import execute_from_command_line
     except ImportError:
         # The above import may fail for some other reason. Ensure that the

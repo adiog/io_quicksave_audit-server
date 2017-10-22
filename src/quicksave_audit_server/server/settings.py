@@ -25,7 +25,10 @@ SECRET_KEY = '7o^#lqzydyiny$y%xljdfws^a8+!)g%-dg&1clsfwd1a^c_0kf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    'audit.quicksave.io'
+]
 
 
 # Application definition
